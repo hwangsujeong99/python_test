@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>황수정 | IT 서비스 기획자(PM)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IT 서비스 기획자(PM) 황수정의 포트폴리오 소개 페이지입니다." />
+
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #051937, #004d7a, #008793, #00bf72, #00c6ff);
+      --primary: #1f6feb;
+      --primary-light: #4ea0ff;
+      --primary-dark: #0b3a8a;
+      --card-bg: rgba(10, 22, 40, 0.9);
+      --text-main: #f8fafc;
+      --text-sub: #cbd5f5;
+      --accent: #38bdf8;
+      --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.5);
+      --radius-xl: 18px;
+      --transition-fast: 0.2s ease-out;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui,
+        "Noto Sans KR", sans-serif;
+      min-height: 100vh;
+      background-image: var(--bg-gradient);
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    /* 배경 유리 카드 느낌 레이아웃 */
+    .page {
+      width: 100%;
+      max-width: 1100px;
+      margin: 32px auto;
+      padding: 20px;
+    }
+
+    .glass {
+      background: linear-gradient(
+        145deg,
+        rgba(15, 23, 42, 0.88),
+        rgba(15, 23, 42, 0.96)
+      );
+      border-radius: 26px;
+      padding: 26px 22px 18px;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      backdrop-filter: blur(18px);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 28px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .avatar {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #e0f2fe, #1d4ed8);
+      box-shadow: 0 15px 40px rgba(37, 99, 235, 0.7);
+      position: relative;
+      overflow: hidden;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .avatar::after {
+      content: "SJ";
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #eff6ff;
+      text-shadow: 0 2px 10px rgba(15, 23, 42, 0.7);
+    }
+
+    .brand-text h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #e5edff;
+    }
+
+    .brand-text span {
+      font-size: 0.78rem;
+      color: var(--text-sub);
+      opacity: 0.9;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 12px;
+      font-size: 0.9rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-sub);
+      padding: 8px 12px;
+      border-radius: 999px;
+      transition: background-color var(--transition-fast), color var(--transition-fast),
+        transform var(--transition-fast);
+    }
+
+    nav a:hover {
+      background: rgba(56, 189, 248, 0.15);
+      color: #e0f2fe;
+      transform: translateY(-1px);
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.4fr);
+      gap: 20px;
+    }
+
+    /* Hero 영역 */
+    .hero {
+      background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.1), transparent 55%),
+        radial-gradient(circle at bottom right, rgba(96, 165, 250, 0.2), transparent 60%),
+        var(--card-bg);
+      border-radius: var(--radius-xl);
+      padding: 26px 22px 22px;
+      position: relative;
+      overflow: hidden;
+    }
